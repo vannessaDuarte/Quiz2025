@@ -1,0 +1,20 @@
+# Directorios de Python y archivos de entorno
+__pycache__/
+*.pyc
+venv/
+env/
+.env/
+
+# Directorios de bases de datos
+*.sqlite3
+
+# Archivos de la configuración de Django
+# (Si tu archivo settings contiene claves secretas, de lo contrario, haz un commit)
+# Si no quieres subir settings.py, debes asegurarte de que otro archivo de settings
+# (e.g., settings_prod.py) esté disponible para configurar las claves secretas.
+# Si tu SECRET_KEY está en una variable de entorno, puedes omitir esta línea.
+# settings_local.py
+# .env
+
+# Otros archivos generados por el sistema operativo
+.DS_Store

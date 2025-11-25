@@ -1,0 +1,29 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h2>Confirmar Eliminación</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        ¿Estás seguro que deseas eliminar el producto **{{ producto.nombre }}** (SKU: **{{ producto.sku }}**)?
+                    </p>
+                    <p class="text-danger">
+                        Esta acción es **irreversible**.
+                    </p>
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-danger btn-lg">Sí, Eliminar</button>
+                            <a href="{% url 'lista_productos' %}" class="btn btn-outline-secondary">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
