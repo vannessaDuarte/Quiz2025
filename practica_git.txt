@@ -1,0 +1,7 @@
+PRACTICA DE GIT Y GITHUB
+
+Proyecto: Quiz2025
+Rama: feature/practica-git
+
+Objetivo: aprender a modificar archivos,
+guardar cambios y subirlos a GitHub.
